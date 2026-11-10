@@ -10,17 +10,17 @@
 </head>
 
 <body>
-<header>
-    <img src="../img/LOGOPRINCIPAL.png" style="width: 200px;" alt="logo de rueda libre">
-     <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
-</header>
-   
+    <header>
+        <img src="../img/LOGOPRINCIPAL.png" style="width: 200px;" alt="logo de rueda libre">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <main>
         <h1>Reserva tu bicicleta</h1>
@@ -40,12 +40,14 @@
 
                     <p>
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre" required minlength="3"
+                            title="Escribe tu nombre completo (mínimo 3 caracteres)">
                     </p>
 
                     <p>
                         <label for="documento">Número de documento</label>
-                        <input type="text" id="documento" name="documento" required>
+                        <input type="text" id="documento" name="documento" required inputmode="numeric"
+                            pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos. Ejemplo: 1234567890">
                     </p>
 
                     <p>
@@ -55,7 +57,8 @@
 
                     <p>
                         <label for="celular">Celular</label>
-                        <input type="tel" id="celular" name="celular" required>
+                        <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}"
+                            title="10 dígitos y debe empezar por 3. Ejemplo: 3001234567">
                     </p>
                 </fieldset>
 
@@ -64,7 +67,7 @@
 
                     <p>
                         <label for="fecha">Fecha del alquiler</label>
-                        <input type="date" id="fecha" name="fecha" required>
+                        <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
                     </p>
 
                     <fieldset>
@@ -95,7 +98,7 @@
 
                     <p>
                         <label for="cantidad">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="6" value="1" required>
                     </p>
 
                     <p>
@@ -114,7 +117,7 @@
 
                     <p>
                         <label for="comentarios">Comentarios</label><br>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40" maxlength="300"></textarea>
                     </p>
 
                     <p>
