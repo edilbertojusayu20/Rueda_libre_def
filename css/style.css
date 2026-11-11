@@ -1,0 +1,59 @@
+/* Rueda Libre – hoja de estilos principal */
+
+:root {
+  /* Colores de marca */
+  --color-verde-ruta: #1E7A4F;
+  --color-naranja-pedal: #F39A2B;
+  --color-azul-noche: #14213D;
+  --color-crema: #FAF6EF;
+  --color-gris-asfalto: #5B6470;
+
+  /* Tipografías (con respaldo) */
+  --fuente-titulos: "Montserrat", Arial, sans-serif;
+  --fuente-texto: "Open Sans", Arial, sans-serif;
+
+  /* Escala de espaciado */
+  --espacio-1: 0.5rem;
+  --espacio-2: 1rem;
+  --espacio-3: 1.5rem;
+  --espacio-4: 2.5rem;
+}
+
+/* El cuerpo define fuente, color y fondo; el resto lo hereda */
+body {
+  font-family: var(--fuente-texto);
+  font-weight: 400;
+  color: var(--color-azul-noche);
+  background-color: var(--color-crema);
+  padding: var(--espacio-3);
+}
+
+/* Todos los encabezados con un solo selector agrupado */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Enlaces: Verde Ruta sobre Crema (4.93:1), siempre subrayados */
+a {
+  color: var(--color-verde-ruta);
+  text-decoration: underline;
+}
+
+/* Texto secundario: Gris Asfalto sobre Crema (5.57:1) */
+small,
+footer {
+  color: var(--color-gris-asfalto);
+}
+
+/* Los controles del formulario no heredan la fuente por defecto */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
