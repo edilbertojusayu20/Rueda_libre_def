@@ -13,9 +13,10 @@
 </head>
 
 <body>
-<a href="index.html" aria-label="Rueda Libre, ir al inicio">
-            <img src="img/LOGOPRINCIPAL.png" style= "width: 200px;" alt="logo Rueda Libre">
-        </a>
+    <a href="../index.html" aria-label="Rueda Libre, ir al inicio">
+        <img src="../img/LOGOPRINCIPAL.png" style="width: 200px;" alt="logo Rueda Libre">
+    </a>
+    <a href="#contenido">Saltar al contenido</a>
 
     <nav aria-label="Menú principal">
         <ul id="menu">
@@ -27,8 +28,11 @@
 
     <main id="contenido">
 
-        <h1>Rueda Libre</h1>
-        <img src="img/portada.jpg" alt="Grupo de ciclistas recorriendo una calle de la ciudad al atardecer" width="600">
+        <section class="portada">
+            <h1>Rueda Libre</h1>
+            <img src="img/ciclistasenmontaña.jpg" alt="Grupo de ciclistas"
+                width="600">
+        </section>
 
         <h2>¿Quiénes somos?</h2>
         <p>
@@ -40,34 +44,44 @@
 
         <h2>Nuestros servicios</h2>
 
-        <h3>Bicicleta urbana</h3>
-        <img src="img/95224-10_LEVO-PRO-CARBON-G4-BLUONYX-DKNVY-BLUGSTPRL_HERO-PDP.webp" alt="Bicicleta urbana" width="400">
-        <p>
-            Ideal para moverte por la ciudad con comodidad. <strong>Incluye casco y candado</strong>
-            en todos los alquileres, y es <em>muy fácil</em> de manejar, incluso si hace
-            tiempo no montas.
-        </p>
+        <article class="tarjeta">
+            <h3>Bicicleta urbana</h3>
+            <img src="img/urbana.jpg" alt="Bicicleta urbana">
+            <p>
+                Ideal para moverte por la ciudad con comodidad. <strong>Incluye casco y candado</strong>
+                en todos los alquileres, y es <em>muy fácil</em> de manejar, incluso si hace
+                tiempo no montas.
+            </p>
+        </article>
 
-        <h3>Bicicleta de montaña</h3>
-        <img src="img/jnjd4psisnbukea2efwy_1.jpg" alt="Bicicleta de montaña" width="400">
-        <p>
-            Pensada para caminos destapados y subidas. <strong>Incluye casco, guantes y kit de reparación</strong>
-            y tiene suspensión para que el recorrido sea <em>mucho más suave</em>.
-        </p>
+        <article class="tarjeta">
+            <h3>Bicicleta de montaña</h3>
+            <img src="img/montaña.webp" alt="Bicicleta de montaña">
+            <p>
+                Pensada para caminos destapados y subidas. <strong>Incluye casco, guantes y kit de reparación</strong>
+                y tiene suspensión para que el recorrido sea <em>mucho más suave</em>.
+            </p>
+        </article>
 
-        <h3>Bicicleta eléctrica</h3>
-        <p>
-            Para quienes quieren llegar lejos sin cansarse. <strong>Batería con autonomía de hasta 60 km</strong>,
-            y puedes cargarla <em>en nuestro local</em> si la necesitas.
-        </p>
+        <article class="tarjeta">
+            <h3>Bicicleta eléctrica</h3>
+            <img src="img/electrica.jpg" alt="Bicicleta eléctrica">
+            <p>
+                Para quienes quieren llegar lejos sin cansarse. <strong>Batería con autonomía de hasta 60 km</strong>,
+                y puedes cargarla <em>en nuestro local</em> si la necesitas.
+            </p>
+        </article>
 
-        <h3>Recorridos guiados</h3>
-        <p>
-            Sal con un guía por rutas para todos los niveles, <strong>los sábados y domingos a las 7:00 a. m.</strong>
-            Mira distancias, duración y precios en la
-            <a href="paginas/tarifas.html#recorridos">tabla de recorridos guiados</a>.
-        </p>
-        <img src="img/ruta.jpg" alt="Camino de tierra entre árboles y montañas recorrido por ciclistas" width="500">
+        <article class="tarjeta">
+            <h3>Recorridos guiados</h3>
+            <img src="img/guiada.jpg" alt="Ciclistas en un recorrido guiado">
+            <p>
+                Sal con un guía por rutas para todos los niveles, <strong>los sábados y domingos a las 7:00 a.
+                    m.</strong>
+                Mira distancias, duración y precios en la
+                <a href="paginas/tarifas.html#recorridos">tabla de recorridos guiados</a>.
+            </p>
+        </article>
 
         <p>
             ¿Quieres ver cuánto cuesta alquilar? Consulta nuestras
@@ -102,12 +116,11 @@
 
     </main>
 
-   <footer>
+    <footer>
         <img src="../img/LOGOPRINCIPAL.png" style="width: 180px;">
         <p><a href="../index.html">Volver al inicio</a></p>
         <p>Rueda Libre · <a href="mailto:contacto@ruedalibre.com">contacto@ruedalibre.com</a> · © 2026</p>
     </footer>
-
 </body>
 
 </html>

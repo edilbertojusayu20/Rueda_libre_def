@@ -15,9 +15,8 @@
 </head>
 
 <body>
-    <a href="../index.html" aria-label="Rueda Libre, ir al inicio">
-        <img src="../img/LOGOPRINCIPAL.png" style="width: 200px;" alt="logo Rueda Libre">
-    </a>
+
+    <a href="#contenido">Saltar al contenido</a>
 
     <nav aria-label="Menú principal">
         <ul id="menu">
@@ -31,7 +30,7 @@
         <h1>Reserva tu bicicleta</h1>
         <p>
             Para reservar, escríbenos a
-            <a href="mailto:contacto@ruedalibre.example">contacto@ruedalibre.example</a>
+            <a href="mailto:contacto@ruedalibre.com">contacto@ruedalibre.com</a>
             con el tipo de bicicleta, la fecha y la hora que prefieres.
         </p>
 
@@ -44,38 +43,38 @@
                 <fieldset>
                     <legend>Tus datos</legend>
 
-                    <p>
+                    <p class="campo">
                         <label for="nombre">Nombre completo</label>
                         <input type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name"
                             title="Escribe tu nombre completo (mínimo 3 caracteres)">
                     </p>
 
-                    <p>
+                    <p class="campo">
                         <label for="documento">Número de documento</label>
                         <input type="text" id="documento" name="documento" required inputmode="numeric"
                             pattern="[0-9]{6,10}" aria-describedby="ayuda-documento"
                             title="Solo números, entre 6 y 10 dígitos. Ejemplo: 1234567890">
-                        <br><small id="ayuda-documento">Solo números, entre 6 y 10 dígitos.</small>
+                        <small id="ayuda-documento">Solo números, entre 6 y 10 dígitos.</small>
                     </p>
 
-                    <p>
+                    <p class="campo">
                         <label for="correo">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" required autocomplete="email">
                     </p>
 
-                    <p>
+                    <p class="campo">
                         <label for="celular">Celular</label>
                         <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}" autocomplete="tel"
                             aria-describedby="ayuda-celular"
                             title="10 dígitos y debe empezar por 3. Ejemplo: 3001234567">
-                        <br><small id="ayuda-celular">10 dígitos, debe empezar por 3. Ejemplo: 3001234567.</small>
+                        <small id="ayuda-celular">10 dígitos, debe empezar por 3. Ejemplo: 3001234567.</small>
                     </p>
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu alquiler</legend>
 
-                    <p>
+                    <p class="campo">
                         <label for="fecha">Fecha del alquiler</label>
                         <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
                     </p>
@@ -96,7 +95,7 @@
                         </p>
                     </fieldset>
 
-                    <p>
+                    <p class="campo">
                         <label for="plan">Plan</label>
                         <select id="plan" name="plan" required>
                             <option value="">Elige un plan</option>
@@ -106,12 +105,12 @@
                         </select>
                     </p>
 
-                    <p>
+                    <p class="campo">
                         <label for="cantidad">Cantidad de bicicletas</label>
                         <input type="number" id="cantidad" name="cantidad" min="1" max="6" value="1" required>
                     </p>
 
-                    <p>
+                    <p class="campo">
                         <label for="recorrido">Recorrido guiado</label>
                         <select id="recorrido" name="recorrido">
                             <option value="ninguno">Ninguno</option>
@@ -125,8 +124,8 @@
                 <fieldset>
                     <legend>Confirmación</legend>
 
-                    <p>
-                        <label for="comentarios">Comentarios</label><br>
+                    <p class="campo">
+                        <label for="comentarios">Comentarios</label>
                         <textarea id="comentarios" name="comentarios" rows="4" cols="40" maxlength="300"></textarea>
                     </p>
 
@@ -155,9 +154,7 @@
     </main>
 
     <footer>
-        <img src="../img/LOGOPRINCIPAL.png" style="width: 180px;">
-        <p><a href="../index.html">Volver al inicio</a></p>
-        <p>Rueda Libre · >contacto@ruedalibre.com</a> · © 2026</p>
+        <p>Rueda Libre · <a href="mailto:contacto@ruedalibre.com">contacto@ruedalibre.com</a> · © 2026</p>
     </footer>
 
 </body>
