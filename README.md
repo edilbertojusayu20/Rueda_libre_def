@@ -61,6 +61,7 @@ Cada etapa corresponde a un MiniReto del entrenamiento y a un commit.
 | 9 | Hoja de estilos y tipografías | `css/styles.css` enlazado en las tres páginas; Google Fonts; variables de color, tipografía y espaciado; herencia desde `body` |
 | 10 | Navegación, enlaces y botones | Clase `activo` e `id="menu"`; conflicto de especificidad resuelto; estados `:hover` y `:focus` visibles en menú, enlaces, botones y campos |
 | 11 | Modelo de caja | `box-sizing: border-box` global; contenedor con `max-width` en `rem` y centrado; servicios en tarjetas; tablas y formulario con relleno y separación en `rem`; menú en fila con `inline-block` |
+| 12 | 	Etiqueta "Nuevo", WhatsApp fijo, consistencia entre páginas y CSS organizado.
 
 La bitácora de los MiniRetos 8 al 11 está en la carpeta [`bitacora/`](bitacora/).
 
