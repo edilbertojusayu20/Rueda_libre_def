@@ -6,33 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Reserva tu bicicleta en Rueda Libre. Escríbenos por correo y consulta nuestro horario de atención.">
-        <link rel="stylesheet" href="../css/style.css">
     <title>Reservas | Rueda Libre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="../img/LOGOPRINCIPAL.png" style="width: 200px;" alt="logo de rueda libre">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
-    </header>
+    <a href="../index.html" aria-label="Rueda Libre, ir al inicio">
+        <img src="../img/LOGOPRINCIPAL.png" style="width: 200px;" alt="logo Rueda Libre">
+    </a>
 
+    <nav aria-label="Menú principal">
+        <ul id="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="tarifas.html">Tarifas y rutas</a></li>
+            <li><a href="reservas.html" class="activo" aria-current="page">Reservas</a></li>
+        </ul>
+    </nav>
 
-    <main>
+    <main id="contenido">
         <h1>Reserva tu bicicleta</h1>
         <p>
             Para reservar, escríbenos a
-            <a href="contacto@ruedalibre.example">hola@ruedalibre.example</a>
+            <a href="mailto:contacto@ruedalibre.example">contacto@ruedalibre.example</a>
             con el tipo de bicicleta, la fecha y la hora que prefieres.
         </p>
 
         <section id="formulario">
             <h2>Formulario de reserva</h2>
+            <p>Todos los campos son obligatorios, excepto "Recorrido guiado" y "Comentarios".</p>
 
             <form action="#" method="post">
 
@@ -41,25 +46,29 @@
 
                     <p>
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3"
+                        <input type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name"
                             title="Escribe tu nombre completo (mínimo 3 caracteres)">
                     </p>
 
                     <p>
                         <label for="documento">Número de documento</label>
                         <input type="text" id="documento" name="documento" required inputmode="numeric"
-                            pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos. Ejemplo: 1234567890">
+                            pattern="[0-9]{6,10}" aria-describedby="ayuda-documento"
+                            title="Solo números, entre 6 y 10 dígitos. Ejemplo: 1234567890">
+                        <br><small id="ayuda-documento">Solo números, entre 6 y 10 dígitos.</small>
                     </p>
 
                     <p>
                         <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" name="correo" required>
+                        <input type="email" id="correo" name="correo" required autocomplete="email">
                     </p>
 
                     <p>
                         <label for="celular">Celular</label>
-                        <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}"
+                        <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}" autocomplete="tel"
+                            aria-describedby="ayuda-celular"
                             title="10 dígitos y debe empezar por 3. Ejemplo: 3001234567">
+                        <br><small id="ayuda-celular">10 dígitos, debe empezar por 3. Ejemplo: 3001234567.</small>
                     </p>
                 </fieldset>
 
@@ -127,7 +136,7 @@
                     </p>
                 </fieldset>
 
-                <button type="submit">Enviar reserva</button>
+                <button type="submit" class="boton">Enviar reserva</button>
 
             </form>
         </section>
@@ -146,11 +155,11 @@
     </main>
 
     <footer>
-        <p>Rueda Libre · <a href="contacto@ruedalibre.com">contacto@ruedalibre.com</a> · © 2026</p>
+        <img src="../img/LOGOPRINCIPAL.png" style="width: 180px;">
+        <p><a href="../index.html">Volver al inicio</a></p>
+        <p>Rueda Libre · >contacto@ruedalibre.com</a> · © 2026</p>
     </footer>
 
 </body>
-
-</html>
 
 </html>
